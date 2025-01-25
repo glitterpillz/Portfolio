@@ -50,7 +50,9 @@ export default function Home() {
           </div>
           {showModal && (
             <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-              <h2 className="text-white">Hiiiii agaaainnnn</h2>
+              <div>
+                <h2 className="neonText headerText">Projects</h2>
+              </div>
             </Modal>
           )}
           <div>
@@ -92,12 +94,13 @@ export default function Home() {
             <Modal isOpen={showAboutModal} onClose={() => setShowAboutModal(false)}>
               <div className="aboutMeDiv flex flex-col justify-center items-center">
                 <img src="/prof-pic1.png" className="w-[200px] mb-3"></img>
-                <h2 className="neonText fnameText">KAREN HICKEY</h2>
+                <h2 className="neonText headerText">KAREN HICKEY</h2>
                 <h3 className="titleText">Full Stack Software Engineer</h3>
-                <div>
+                <div className="flex flex-col justify-center items-center mt-2.5">
                   <p>karenhickey1010@gmail.com</p>
                   <Footer />
                 </div>
+                <p className="text-justify mt-3">I am a results-driven professional who excels in fast-paced environments. My ability to problem-solve coupled with my excellent communication skills propel me to resolve conflicts and issues with tact and diplomacy. I value the contributions of my peers and enjoy working on a team. My determination motivates me to tackle challenges head-on, and my persistence often leads to creative and effective solutions. I consistently seek opportunities to learn, ensuring I can adapt to evolving technology and drive innovation.</p>
               </div>
             </Modal>
           )}
