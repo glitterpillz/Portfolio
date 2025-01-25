@@ -17,11 +17,80 @@
   }
 }
 
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #ff3bba,
+    0 0 40px #ff3bba,
+    0 0 80px #ff3bba,
+    0 0 90px #ff3bba,
+    0 0 100px #ff3bba,
+    0 0 150px #ff3bba;
+  }
+
+  20%, 24%, 55% {        
+    text-shadow: none;
+  }    
+}
+
+@keyframes glowing-pulse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickerProjects {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow: 
+      0 0 4px #fff,
+      0 0 7px #d13bff,
+      0 0 14px #d13bff,
+      0 0 21px #d13bff,
+      0 0 42px #d13bff;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+}
+
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.neonBorder {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 7px #fff, 
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 46px #ff3bba,
+    0 0 76px #ff3bba,
+    0 0 86px #ff3bba, 
+    0 0 96px #e682c3, 
+    0 0 130px #e682c3;
+}
+
+.softNeonBorder {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 3px #fff, 
+    0 0 7px #fff, 
+    0 0 10px #f47fcb, 
+    0 0 18px #f47fcb,
+    0 0 21px #ff3bba,
+    0 0 46px #ff3bba;
 }
 
 .neonText {
@@ -35,18 +104,6 @@ body {
   0 0 92px #ff3bba,
   0 0 102px #ff3bba,
   0 0 151px #ff3bba
-}
-
-
-
-.projectBtn {
-  color: #fff;
-}
-
-.projectBtn:hover {
-  color: #eed0e3;
-  background-color: #232475;
-  cursor: pointer;
 }
 
 .neonP {
@@ -83,6 +140,17 @@ body {
   animation: flickerProjects 1.7s infinite alternate;
 }
 
+
+.projectBtn {
+  color: #fff;
+}
+
+.projectBtn:hover {
+  color: #eed0e3;
+  background-color: #232475;
+  cursor: pointer;
+}
+
 .openSign {
   font-family: var(--font-cookie);
   font-size: 58px;
@@ -103,38 +171,6 @@ body {
 .openSign:hover {
   color: #a893a2;
   text-shadow: none;
-}
-
-@keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-    0 0 4px #fff,
-    0 0 11px #fff,
-    0 0 19px #ff3bba,
-    0 0 40px #ff3bba,
-    0 0 80px #ff3bba,
-    0 0 90px #ff3bba,
-    0 0 100px #ff3bba,
-    0 0 150px #ff3bba;
-  }
-
-  20%, 24%, 55% {        
-    text-shadow: none;
-  }    
-}
-
-.neonBorder {
-  border: 2px solid #fff;
-  border-radius: 10px;
-  box-shadow: 
-    0 0 7px #fff, 
-    0 0 10px #fff, 
-    0 0 21px #fff, 
-    0 0 46px #ff3bba,
-    0 0 76px #ff3bba,
-    0 0 86px #ff3bba, 
-    0 0 96px #e682c3, 
-    0 0 130px #e682c3;
 }
 
 h1 {
@@ -222,56 +258,16 @@ h1 {
   opacity: 1;
 }
 
+
 .aboutMeDiv {
   font-family: var(--font-numans);
 }
 
-.fnameText {
+.headerText {
   font-family: var(--font-autourOne);
   font-size: 32px;
 }
 
 .titleText {
   font-size: 22px;
-}
-
-@keyframes glowing-pulse {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    opacity: 1;
-    text-shadow: 
-      0 0 4px #fff,
-      0 0 7px #ff3bba,
-      0 0 14px #ff3bba,
-      0 0 21px #ff3bba,
-      0 0 42px #ff3bba;
-  }
-  20%, 24%, 55% {
-    opacity: 0.3;
-    text-shadow: none;
-  }
-}
-
-@keyframes flickerProjects {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    opacity: 1;
-    text-shadow: 
-      0 0 4px #fff,
-      0 0 7px #d13bff,
-      0 0 14px #d13bff,
-      0 0 21px #d13bff,
-      0 0 42px #d13bff;
-  }
-  20%, 24%, 55% {
-    opacity: 0.3;
-    text-shadow: none;
-  }
 }

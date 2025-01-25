@@ -2,13 +2,13 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div>
+    <div className="flex gap-5 m-3">
       <a
         href="https://www.linkedin.com/in/karen-hickey-a2a193341"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button>
+        <button className="softNeonBorder bg-white text-black">
           <FaLinkedin size={30} />
         </button>
       </a>
@@ -17,7 +17,7 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button>
+        <button className="softNeonBorder bg-white text-black">
           <FaGithub size={30} />
         </button>
       </a>
