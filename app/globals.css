@@ -60,7 +60,6 @@
   }
 }
 
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -76,9 +75,7 @@ body {
     0 0 21px #fff, 
     0 0 46px #ff3bba,
     0 0 76px #ff3bba,
-    0 0 86px #ff3bba, 
-    0 0 96px #e682c3, 
-    0 0 130px #e682c3;
+    0 0 86px #ff3bba;
 }
 
 .softNeonBorder {
@@ -92,6 +89,19 @@ body {
     0 0 21px #ff3bba,
     0 0 46px #ff3bba;
 }
+
+.blueNeonBorder {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 3px #fff, 
+    0 0 7px #fff, 
+    0 0 10px #2b4bff, 
+    0 0 18px #2b4bff,
+    0 0 21px #2be3ff,
+    0 0 46px #2be3ff;
+}
+
 
 .neonText {
   color: #fff;
@@ -140,7 +150,6 @@ body {
   animation: flickerProjects 1.7s infinite alternate;
 }
 
-
 .projectBtn {
   color: #fff;
 }
@@ -149,6 +158,18 @@ body {
   color: #eed0e3;
   background-color: #232475;
   cursor: pointer;
+}
+
+.subHeader {
+  font-size: 24px;
+  font-family: var(--font-chilanka);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.subHeader:hover {
+  transform: scaleY(1.3);
 }
 
 .openSign {
@@ -270,4 +291,9 @@ h1 {
 
 .titleText {
   font-size: 22px;
+}
+
+.ropeImg {
+  /* -webkit-filter: grayscale(50%) */
+
 }

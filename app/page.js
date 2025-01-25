@@ -16,7 +16,8 @@ export default function Home() {
           className="w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: "url('/bg.jpg')",
-            perspective: "1000px"
+            perspective: "1000px",
+            borderRadius: "20px"
           }}
         >
           <h1
@@ -50,8 +51,39 @@ export default function Home() {
           </div>
           {showModal && (
             <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-              <div>
-                <h2 className="neonText headerText">Projects</h2>
+              <div 
+                className="flex flex-col justify-center items-center overflow-y-scroll"
+                style={{
+                  maxHeight: "600px",
+                  overflowY: "auto",
+                }}
+              >
+                <h2 className="neonText headerText m-5">Projects</h2>
+                <div className="flex justify-between w-full">
+                  <div className="flex flex-col center justify-around w-[250px] mt-5 text-s">
+                    <div>
+                      <h3 className="subHeader">WaterBnB</h3>
+                      <p>Dec 13, 2024</p>
+                      <p>JavaScript Express • React Redux</p>
+                    </div>
+                    <div>
+                      <h3 className="subHeader">Lovely Paws Pet Hotel</h3>
+                      <p>Jan 3, 2025</p>
+                      <p>Python Flask • Redux Toolkit</p>
+                    </div>
+                    <div>
+                      <h3 className="subHeader">PokeNote</h3>
+                      <p>Jan 24, 2025</p>
+                      <p>Python Flask • Redux Toolkit</p>
+                    </div>
+                  </div>
+                  <div className="neonBorder h-[400px] self-center"></div>
+                  <div className="flex flex-col justify-center items-center w-[200px] gap-3">
+                    <img src="/waterbnb-bw.png" className="rounded-md"></img>
+                    <img src="/lovelypaws-bw.png" className="rounded-md"></img>
+                    <img src="/pokenote-bw.jpg" className="rounded-md"></img>
+                  </div>
+                </div>
               </div>
             </Modal>
           )}
@@ -104,6 +136,17 @@ export default function Home() {
               </div>
             </Modal>
           )}
+          <img
+            src="/poster.png"
+            className="absolute w-[120px]"
+            style={{
+              top: '28%',
+              left: '1%',
+              transform: "rotateX(0deg) rotateY(88deg)",
+              filter: "blur(.5px)",
+              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+            }}
+          ></img>
         </div>
       </div>
     </div>
