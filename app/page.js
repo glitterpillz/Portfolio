@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center mid-h-screen">
-      <div className="flex flex-col justify-start items-center w-[900px] h-[800px] neonBorder mt-40 rounded-md">
+      <div className="flex flex-col justify-start items-center w-[900px] h-[800px] neonBorder mt-12 rounded-md">
       
         <div 
           className="w-full h-full bg-cover bg-center"
