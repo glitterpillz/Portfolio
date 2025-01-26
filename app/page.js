@@ -140,8 +140,8 @@ export default function Home() {
               alt="Cat Gif"
               className="w-[45px] h-[45px] absolute"
               style={{
-                top: "440px",
-                left: "410px",
+                top: "414px",
+                left: "425px",
                 opacity: "90%",
                 filter: "blur(1px)"
               }}
