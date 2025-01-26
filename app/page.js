@@ -13,8 +13,8 @@ export default function Home() {
   const [showTechModal, setShowTechModal] = useState(false)
 
   return (
-    <div className="flex flex-col justify-center items-center mid-h-screen">
-      <div className="flex flex-col justify-start items-center w-[900px] h-[800px] neonBorder mt-12 rounded-md">
+    <div className="flex flex-col justify-center items-center mid-h-screen overflow-y-auto">
+      <div className="flex flex-col justify-start items-center w-[900px] h-[800px] neonBorder mt-5 rounded-md">
       
         <div 
           className="w-full h-full bg-cover bg-center"
