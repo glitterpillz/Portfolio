@@ -13,8 +13,8 @@ export default function Home() {
   const [showTechModal, setShowTechModal] = useState(false)
 
   return (
-    <div className="flex flex-col justify-center items-center mid-h-screen overflow-y-auto">
-      <div className="flex flex-col justify-start items-center w-[900px] h-[800px] neonBorder mt-5 rounded-md">
+    <div className="flex flex-col justify-center items-center mid-h-screen overflow-y-auto p-32">
+      <div className="flex flex-col justify-start items-center w-[800px] h-[720px] neonBorder rounded-md">
       
         <div 
           className="w-full h-full bg-cover bg-center"
@@ -28,7 +28,7 @@ export default function Home() {
             className="absolute text-white text-[55px] font-bold"
             style={{
               top: "13%",
-              left: "7%",
+              left: "4%",
               transform: "rotateX(0deg) rotateY(83deg)",
               textShadow: "0 5px 10px rgba(0, 0, 0, 0.7)", 
             }}
@@ -162,8 +162,8 @@ export default function Home() {
             onClick={() => setShowAboutModal(true)}
             className="openSign text-white absolute"
             style={{
-              top: "33%",
-              left: "30%",
+              top: "33.5%",
+              left: "30.7%",
               transform: "rotateX(3deg) rotateY(78deg)",
             }}
           >
@@ -189,7 +189,7 @@ export default function Home() {
             style={{
               top: "63%",
               left: "3%",
-              transform: "rotateX(0deg) rotateY(76deg)",
+              transform: "rotateX(0deg) rotateY(77deg)",
             }}
           >
             TECH
