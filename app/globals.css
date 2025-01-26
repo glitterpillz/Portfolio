@@ -366,6 +366,19 @@ h1 {
   font-size: 22px;
 }
 
+.subtitleText {
+  font-family: var(--font-zen-dots);
+  font-size: 22px;
+  color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #2b4bff,
+  0 0 42px #2be3ff,
+  0 0 82px #2be3ff;
+  /* 0 0 92px #2be3ff; */
+}
+
 .techSign {
   font-family: var(--font-zen-dots);
   font-size: 30px;

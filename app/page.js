@@ -61,7 +61,7 @@ export default function Home() {
                   maxHeight: "600px",
                 }}
               >
-                <h2 className="neonText headerText mt-10">Projects</h2>
+                <h2 className="neonText headerText mt-5">Projects</h2>
                 <div className="flex justify-between w-full">
                   <div className="flex flex-col center justify-around w-[250px] text-s">
                     <div>
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center">
                   <h3 className="footer">Portfolio Website</h3>
                   <p>I built this Portfolio using Next.js and Tailwind CSS</p>
-                  <p>Last updated: Jan 25, 2025</p>
+                  <p>Last updated: Jan 26, 2025</p>
                 </div>
               </div>
             </Modal>
@@ -179,7 +179,7 @@ export default function Home() {
                   <p>karenhickey1010@gmail.com</p>
                   <Footer />
                 </div>
-                <p className="text-justify mt-3">I am a results-driven professional who excels in fast-paced environments. My ability to problem-solve coupled with my excellent communication skills propel me to resolve conflicts and issues with tact and diplomacy. I value the contributions of my peers and enjoy working on a team. My determination motivates me to tackle challenges head-on, and my persistence often leads to creative and effective solutions. I consistently seek opportunities to learn, ensuring I can adapt to evolving technology and drive innovation.</p>
+                <p className="text-justify mt-3">I am a results-driven professional who thrives in fast-paced environments, combining problem-solving skills with excellent communication to resolve conflicts with tact and diplomacy. As a creative thinker with a keen eye for design, I bring a unique perspective to web application styling, ensuring visually appealing and user-friendly interfaces. I value collaboration and consistently seek opportunities to learn, leveraging diverse ideas to drive innovation and deliver impactful results.</p>
               </div>
             </Modal>
           )}
@@ -197,7 +197,7 @@ export default function Home() {
           {showTechModal && (
             <Modal isOpen={showTechModal} onClose={() => setShowTechModal(false)}>
               <div 
-              className="scrollModal pr-4 flex flex-col gap-8 items-center overflow-y-scroll"
+              className="scrollModal pr-4 flex flex-col gap-8 items-center overflow-y-scroll pb-5"
               style={{
                 maxHeight: "600px",
               }}              
@@ -218,10 +218,23 @@ export default function Home() {
                   </div>
                 </div>
                 <h2 className="neonText headerText mt-3">SKILLS</h2>
-                <div className="flex flex-col items-center">
-                  <h3 className="titleText">Languages</h3>
-                  
-                  <h3 className="titleText">Frameworks</h3>
+                <div className="flex flex-col w-4/5 gap-5">
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">Languages</h3>
+                    <p>JavaScript • Python • HTML • CSS</p>
+                  </div>
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">Frameworks</h3>
+                    <p>React.js • Node.js • Express.js • Next.js • Tailwind CSS</p>
+                  </div>
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">Databases</h3>
+                    <p>PostgreSQL • SQLite • SQLAlchemy</p>
+                  </div>
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">Tools</h3>
+                    <p>GitHub • VSCode • Postman • Insomnia • RESTful API</p>
+                  </div>
                 </div>
               </div>
             </Modal>
