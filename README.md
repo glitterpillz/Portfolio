@@ -37,5 +37,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # Portfolio
-
-Welcome to my Portfolio! After completing a full-time bootcamp for Full Stack Software Engineering at App Academy, I decided to get creative with my personal website. Through my learning, I developed a passion for styling and web design. 
