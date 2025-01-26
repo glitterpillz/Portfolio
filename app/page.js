@@ -222,7 +222,7 @@ export default function Home() {
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Languages</h3>
                     <p>JavaScript • Python • HTML • CSS</p>
-                  </div>
+                  </div> 
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Frameworks</h3>
                     <p>React.js • Node.js • Express.js • Next.js • Tailwind CSS</p>
