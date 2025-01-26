@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Chilanka, Anta, Cookie, Autour_One, Numans } from "next/font/google";
+import { Chilanka, Anta, Cookie, Autour_One, Numans, Zen_Dots } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,13 +32,19 @@ const cookie = Cookie({
 
 const autourOne = Autour_One({
   weight: '400',
-  variable: "--font-autourOne",
+  variable: "--font-autour-one",
   subsets: ['latin']
 })
 
 const numans = Numans({
   weight: '400',
   variable: "--font-numans",
+  subsets: ['latin']
+})
+
+const zenDots = Zen_Dots({
+  weight: '400',
+  variable: "--font-zen-dots",
   subsets: ['latin']
 })
 
@@ -51,7 +57,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${chilanka.variable} ${anta.variable} ${cookie.variable} ${autourOne.variable} ${numans.variable} antialiased`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          ${chilanka.variable} 
+          ${anta.variable} 
+          ${cookie.variable} 
+          ${autourOne.variable} 
+          ${numans.variable} 
+          ${zenDots.variable}
+          antialiased
+        `}
       >
         {children}
       </body>

@@ -1,12 +1,16 @@
 "use client"
 import Image from "next/image";
+// import { useRouter } from 'next/navigation';
 import React, { useState } from "react";
 import Modal from '../components/Modal'
 import Footer from "@/components/Footer";
+import { damp } from "three/src/math/MathUtils";
 
 export default function Home() {
+  // const router = useRouter()
   const [showModal, setShowModal] = useState(false);
   const [showAboutModal, setShowAboutModal] = useState(false);
+  const [showTechModal, setShowTechModal] = useState(false)
 
   return (
     <div className="flex flex-col justify-center items-center mid-h-screen">
@@ -52,37 +56,80 @@ export default function Home() {
           {showModal && (
             <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
               <div 
-                className="flex flex-col justify-center items-center overflow-y-scroll"
+                className="scrollModal pr-4 flex flex-col gap-8 items-center overflow-y-scroll"
                 style={{
                   maxHeight: "600px",
-                  overflowY: "auto",
                 }}
               >
-                <h2 className="neonText headerText m-5">Projects</h2>
+                <h2 className="neonText headerText mt-10">Projects</h2>
                 <div className="flex justify-between w-full">
-                  <div className="flex flex-col center justify-around w-[250px] mt-5 text-s">
+                  <div className="flex flex-col center justify-around w-[250px] text-s">
                     <div>
-                      <h3 className="subHeader">WaterBnB</h3>
+                      <a 
+                        href="https://waterbnb-p356.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="subHeader"
+                      >
+                        WaterBnB
+                      </a>
                       <p>Dec 13, 2024</p>
                       <p>JavaScript Express • React Redux</p>
                     </div>
                     <div>
-                      <h3 className="subHeader">Lovely Paws Pet Hotel</h3>
+                      <a
+                        href="https://lovely-paws-hotel-717z.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="subHeader"
+                      >                       
+                        Lovely Paws Pet Hotel
+                      </a>
                       <p>Jan 3, 2025</p>
                       <p>Python Flask • Redux Toolkit</p>
                     </div>
                     <div>
-                      <h3 className="subHeader">PokeNote</h3>
+                      <a
+                        href="https://pokenote-flask-c61f.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="subHeader"
+                      >
+                        PokeNote
+                      </a>
                       <p>Jan 24, 2025</p>
                       <p>Python Flask • Redux Toolkit</p>
                     </div>
                   </div>
                   <div className="neonBorder h-[400px] self-center"></div>
                   <div className="flex flex-col justify-center items-center w-[200px] gap-3">
-                    <img src="/waterbnb-bw.png" className="rounded-md"></img>
-                    <img src="/lovelypaws-bw.png" className="rounded-md"></img>
-                    <img src="/pokenote-bw.jpg" className="rounded-md"></img>
+                    <a
+                      href="https://waterbnb-p356.onrender.com"
+                      target="_blank"
+                      rel="noopener noreferrer"                   
+                    >
+                      <img src="/waterbnb-bw.png" className="projectImg rounded-lg p-1"></img>
+                    </a>
+                    <a
+                      href="https://lovely-paws-hotel-717z.onrender.com"
+                      target="_blank"
+                      rel="noopener noreferrer"                   
+                    >
+                      <img src="/lovelypaws-bw.png" className="projectImg rounded-lg p-1"></img>
+                    </a>
+                    <a
+                      href="https://pokenote-flask-c61f.onrender.com"
+                      target="_blank"
+                      rel="noopener noreferrer"                   
+                    >
+                      <img src="/pokenote-bw.jpg" className="projectImg rounded-lg p-1"></img>
+                    </a>
                   </div>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                  <h3 className="footer">Portfolio Website</h3>
+                  <p>I built this Portfolio using Next.js and Tailwind CSS</p>
+                  <p>Last updated: Jan 25, 2025</p>
                 </div>
               </div>
             </Modal>
@@ -136,17 +183,49 @@ export default function Home() {
               </div>
             </Modal>
           )}
-          <img
-            src="/poster.png"
-            className="absolute w-[120px]"
+          <p 
+            onClick={() => setShowTechModal(true)}
+            className= "techSign text-white absolute pl-2 pr-2"
             style={{
-              top: '28%',
-              left: '1%',
-              transform: "rotateX(0deg) rotateY(88deg)",
-              filter: "blur(.5px)",
-              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+              top: "63%",
+              left: "3%",
+              transform: "rotateX(0deg) rotateY(76deg)",
             }}
-          ></img>
+          >
+            TECH
+          </p>
+          {showTechModal && (
+            <Modal isOpen={showTechModal} onClose={() => setShowTechModal(false)}>
+              <div 
+              className="scrollModal pr-4 flex flex-col gap-8 items-center overflow-y-scroll"
+              style={{
+                maxHeight: "600px",
+              }}              
+              >
+                <h2 className="neonText headerText">TECHNICAL BULLETPOINTS</h2>
+                <div className="flex flex-col gap-3">
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Built scalable and performant APIs using JavaScript (Express) and Python (Flask) frameworks, leveraged their lightweight and modular architectures to efficiently handle routing, middleware, and RESTful endpoints, optimizing server-side functionality and response times.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Implemented state management solutions with React and Redux Toolkit, improving application maintainability and performance by standardizing state updates, minimizing unnecessary re-renders, and providing a more intuitive developer experience through simplified boilerplate.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Crafted pixel-perfect, visually engaging and interactive user interfaces using advanced CSS techniques and utility frameworks like Tailwind CSS, including 3D design implementations, to create dynamic and immersive web experiences that enhance user engagement.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Integrated secure and scalable storage solutions by configuring AWS S3 for image uploads, ensuring reliable data storage, faster asset retrieval through global content delivery, and robust security measures, including controlled permissions and access policies.</p>
+                  </div>
+                </div>
+                <h2 className="neonText headerText mt-3">SKILLS</h2>
+                <div className="flex flex-col items-center">
+                  <h3 className="titleText">Languages</h3>
+                  
+                  <h3 className="titleText">Frameworks</h3>
+                </div>
+              </div>
+            </Modal>
+          )}
         </div>
       </div>
     </div>
