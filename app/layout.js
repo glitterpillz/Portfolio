@@ -58,6 +58,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta property="og:title" content="Karen Hickey's Portfolio" />
+        <meta property="og:description" content="Explore my projects and skills as a Full Stack Software Engineer!" />
+        <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
       </head>
       <body

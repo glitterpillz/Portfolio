@@ -217,22 +217,30 @@ export default function Home() {
                   </div>
                 </div>
                 <h2 className="neonText headerText mt-3">SKILLS</h2>
-                <div className="flex flex-col w-4/5 gap-5">
+                <div className="flex flex-col w-11/12 gap-6">
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Languages</h3>
                     <p>JavaScript • Python • HTML • CSS</p>
                   </div> 
                   <div className="w-full flex flex-col gap-2">
-                    <h3 className="subtitleText">Frameworks</h3>
-                    <p>React.js • Node.js • Express.js • Next.js • Tailwind CSS</p>
+                    <h3 className="subtitleText">Frameworks & Libraries</h3>
+                    <p>React • Next.js • Flask • Tailwind CSS • Node.js • Express</p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <h3 className="subtitleText">Databases</h3>
-                    <p>PostgreSQL • SQLite • SQLAlchemy</p>
+                    <h3 className="subtitleText">Databases & ORMs</h3>
+                    <p>PostgreSQL • SQLite • SQLAlchemy • Sequelize</p>
+                  </div>
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">State Management & Cloud</h3>
+                    <p>React Redux • Redux Toolkit • AWS S3</p>
+                  </div>
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="subtitleText">Authentication & Security</h3>
+                    <p>JWT • Auth.js • CORS</p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Tools</h3>
-                    <p>GitHub • VSCode • Postman • Insomnia • AWS S3</p>
+                    <p>GitHub • VSCode • Postman • Insomnia</p>
                   </div>
                 </div>
               </div>
