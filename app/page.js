@@ -201,22 +201,7 @@ export default function Home() {
                 maxHeight: "600px",
               }}              
               >
-                <h2 className="neonText headerText">TECHNICAL BULLETPOINTS</h2>
-                <div className="flex flex-col gap-3">
-                  <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Developed scalable APIs with Express.js and Flask, incorporating efficient RESTful routing and middleware handling. Optimized server-size performance with SQLAlchemy and Sequelize for secure database interactions and improved data retrieval speeds.</p>
-                  </div>
-                  <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Implemented global state management with Redux Toolkit in React-based projects to streamline state updates, prevent unnecessary re-renders, and improve maintainability in complex applications.</p>
-                  </div>
-                  <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Designed and built visually immersive user interfaces by integrating 3D animations and glowing effects with Tailwind CSS. Combined advanced CSS techniques with interactive modals to create dynamic and engaging user experiences on personal and client-facing platforms.</p>
-                  </div>
-                  <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Configured AWS S3 buckets for secure image storage and retrieval in projects like PokéNote and Lovely Paws Pet Hotel, utilizing pre-signed URLs and controlled permissions to optimize asset management and ensure data security.</p>
-                  </div>
-                </div>
-                <h2 className="neonText headerText mt-3">SKILLS</h2>
+                <h2 className="neonText headerText">SKILLS</h2>
                 <div className="flex flex-col w-11/12 gap-6">
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Languages</h3>
@@ -236,13 +221,41 @@ export default function Home() {
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Authentication & Security</h3>
-                    <p>JWT • Auth.js • CORS</p>
+                    <p>JWT • BCrypt • Auth.js • CORS</p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Tools</h3>
                     <p>GitHub • VSCode • Postman • Insomnia</p>
                   </div>
                 </div>
+                <h2 className="neonText headerText mt-5">TECHNICAL BULLETS</h2>
+                <div className="flex flex-col gap-3">
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Developed scalable APIs with efficient RESTful routing in Express.js and Flask, utilizing middleware for authentication, validation, error handling, and logging to ensure robust and maintainable endpoints.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Managed complex application state using React Redux, implementing actions, reducers, and a centralized store to ensure predictable state updates and seamless component communication.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Created and managed relational databases with SQLite3, using Sequelize as an ORM to define models, handle migrations, and perform complex queries with ease and efficiency.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Utilized advanced CSS techniques, including flexbox, grid, and media queries to design and implement fully responsive and visually dynamic pages and modals across various devices.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Streamlined state management with Redux Toolkit, leveraging its simplified syntax for creating slices, reducers, and asynchronous logic, resulting in cleaner code and improved developer productivity.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Implemented custom secure authentication using BCrypt for password hashing and Auth.js for session management, ensuring robust protection against unauthorized access and data breaches.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Designed and built visually immersive user interfaces with Next.js, integrating 3D animations and glowing effects using Tailwind CSS to create dynamic and engaging user experiences.</p>
+                  </div>
+                  <div className="flex gap-3 text-justify">
+                    <span className="text-xl neonText">•</span><p>Configured AWS S3 buckets to manage image file uploads, utilizing controlled permissions, access policies, versioning, and optimized storage settings for secure and scalable file handling.</p>
+                  </div>
+                </div>
+
               </div>
             </Modal>
           )}
