@@ -204,16 +204,16 @@ export default function Home() {
                 <h2 className="neonText headerText">TECHNICAL BULLETPOINTS</h2>
                 <div className="flex flex-col gap-3">
                   <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Built scalable and performant APIs using JavaScript (Express) and Python (Flask) frameworks, leveraged their lightweight and modular architectures to efficiently handle routing, middleware, and RESTful endpoints, optimizing server-side functionality and response times.</p>
+                    <span className="text-xl neonText">•</span><p>Developed scalable APIs with Express.js and Flask, incorporating efficient RESTful routing and middleware handling. Optimized server-size performance with SQLAlchemy and Sequelize for secure database interactions and improved data retrieval speeds.</p>
                   </div>
                   <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Implemented state management solutions with React and Redux Toolkit, improving application maintainability and performance by standardizing state updates, minimizing unnecessary re-renders, and providing a more intuitive developer experience through simplified boilerplate.</p>
+                    <span className="text-xl neonText">•</span><p>Implemented global state management with Redux Toolkit in React-based projects to streamline state updates, prevent unnecessary re-renders, and improve maintainability in complex applications.</p>
                   </div>
                   <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Crafted pixel-perfect, visually engaging and interactive user interfaces using advanced CSS techniques and utility frameworks like Tailwind CSS, including 3D design implementations, to create dynamic and immersive web experiences that enhance user engagement.</p>
+                    <span className="text-xl neonText">•</span><p>Designed and built visually immersive user interfaces by integrating 3D animations and glowing effects with Tailwind CSS. Combined advanced CSS techniques with interactive modals to create dynamic and engaging user experiences on personal and client-facing platforms.</p>
                   </div>
                   <div className="flex gap-3 text-justify">
-                    <span className="text-xl neonText">•</span><p>Integrated secure and scalable storage solutions by configuring AWS S3 for image uploads, ensuring reliable data storage, faster asset retrieval through global content delivery, and robust security measures, including controlled permissions and access policies.</p>
+                    <span className="text-xl neonText">•</span><p>Configured AWS S3 buckets for secure image storage and retrieval in projects like PokéNote and Lovely Paws Pet Hotel, utilizing pre-signed URLs and controlled permissions to optimize asset management and ensure data security.</p>
                   </div>
                 </div>
                 <h2 className="neonText headerText mt-3">SKILLS</h2>
