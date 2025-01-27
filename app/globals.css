@@ -9,6 +9,25 @@
   --glow-text-color: #f0fdff;
 }
 
+@layer components {
+    @media (max-width: 1024px) {
+      .mainContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+      }
+    }
+    
+    @media (min-width: 1025px) and (max-width: 3000px) {
+      .mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+      }
+    }
+}
+
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
