@@ -232,7 +232,7 @@ export default function Home() {
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Tools</h3>
-                    <p>GitHub • VSCode • Postman • Insomnia • RESTful API</p>
+                    <p>GitHub • VSCode • Postman • Insomnia • AWS S3</p>
                   </div>
                 </div>
               </div>
