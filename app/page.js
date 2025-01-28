@@ -213,7 +213,7 @@ export default function Home() {
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">Databases & ORMs</h3>
-                    <p>PostgreSQL • SQLite • SQLAlchemy • Sequelize</p>
+                    <p>PostgreSQL • SQLite3 • SQLAlchemy • Sequelize</p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
                     <h3 className="subtitleText">State Management & Cloud</h3>
