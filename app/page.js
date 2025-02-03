@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center">
                   <h3 className="footer">Portfolio Website</h3>
                   <p>I built this Portfolio using Next.js and Tailwind CSS</p>
-                  <p>Last updated: Jan 26, 2025</p>
+                  <p>Last updated: Feb 3, 2025</p>
                 </div>
               </div>
             </Modal>
@@ -167,7 +167,7 @@ export default function Home() {
           </p>
           {showAboutModal && (
             <Modal isOpen={showAboutModal} onClose={() => setShowAboutModal(false)}>
-              <div className="aboutMeDiv flex flex-col justify-center items-center">
+              <div className="scrollModal pr-4 aboutMeDiv flex flex-col justify-around items-center h-[600px] overflow-y-auto">
                 <img src="/prof-pic1.png" className="w-[200px] mb-3"></img>
                 <h2 className="neonText headerText">KAREN HICKEY</h2>
                 <h3 className="titleText">Full Stack Software Engineer</h3>
@@ -178,26 +178,53 @@ export default function Home() {
                     className="rounded-md"
                     onClick={() => setShowPdfModal(true)}
                   >
-                      Download Resume
+                      <strong>Download Resume</strong>
                   </button>
                   {showPdfModal && (
                     <Modal isOpen={showPdfModal} onClose={() => setShowPdfModal(false)}>
                       <div className="p-3">
                         <h2 className="text-center subtitleText mb-4">Print or Download Resume</h2>
-                        <div className="h-[500px] flex flex-column">
-                          <div className="h-[400px] overflow-y-auto">
+                        <div className="h-[400px] flex flex-column">
+                          <div className="h-[350px] overflow-y-auto rounded-sm mt-3">
                             <img 
                               src="/resume-screenshot.png"
-                              className="w-full"
+                              className="w-full rounded-sm"
                             >
                             </img>
                           </div>
                         </div>
+                          <div className="flex justify-center gap-28 w-full">
+                            <button 
+                              className="resumeButton neonText text-xl"
+                              onClick={() => {
+                                const pdfUrl = '/Karen_Hickey_Resume.pdf';
+                                window.open(pdfUrl, "_blank");
+                              }} 
+                            >
+                              PRINT
+                            </button>
+                            <button 
+                              className="resumeButton neonText text-xl"
+                              onClick={() => {
+                                const pdfUrl = '/Karen_Hickey_Resume.pdf';
+                                const link = document.createElement("a");
+                                link.href = pdfUrl;
+                                link.download = 'Karen_Hickey_Resume.pdf';
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                              }}
+                            >
+                              SA<span className="neonFaultyV">V</span>E
+                            </button>
+                          </div>
                       </div>
                     </Modal>
                   )}
                 </div>
-                <p className="text-justify mt-3">I am a results-driven professional who thrives in fast-paced environments, combining problem-solving skills with excellent communication to resolve conflicts with tact and diplomacy. As a creative thinker with a keen eye for design, I bring a unique perspective to web application styling, ensuring visually appealing and user-friendly interfaces. I value collaboration and consistently seek opportunities to learn, leveraging diverse ideas to drive innovation and deliver impactful results.</p>
+                <p className="text-justify mt-3">An inventive problem-solver at heart, I have always been driven by a passion for creativity and the art of design. Growing up immersed in video games, I was captivated not only by the stories, but by the artistry and mechanics that brought them to life - sparking my curiosity for programming. Through an intensive bootcamp, I uncovered a love for crafting intuitive and visually compelling web applications, blending technical precision with artistic vision. My ability to think creatively allows me to transform abstract ideas into seamless digital experiences that engage, inspire, and leave a lasting impact.</p>
+                <p className="text-justify mt-3">Having grown up an Army brat, I learned adaptability and the benefit of connecting with others. Creativity has always been a big part of my life—whether through writing, music, art, or intricate crafts. I also understand the value of self-discipline and thrived in teamwork and performance as a former equestrian, gymnast, cheerleader, and musician.</p>
+                <p className="text-justify mt-3">My professional career began with an Associate&apos;s Degree in Business Administration, leading to a role as a Financial Controller, but I was always searching for something that truly inspired me. In finally taking that intimidating leap of faith into Programming, I found a craft that blends logic, creativity, and problem-solving in a way that felt natural and fun! Outside of tech, I have a profound love for animals and take the greatest joy in bringing smiles to others, whether through my work or personal passions.</p>              
               </div>
             </Modal>
           )}
