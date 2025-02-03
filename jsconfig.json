@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",  // Ensures module resolution starts from the root of the project
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"], // Assuming your main code is in the `app` directory
+      "@components/*": ["./components/*"]
     }
-  }
+  },
 }

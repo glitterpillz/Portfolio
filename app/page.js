@@ -1,16 +1,13 @@
 "use client"
-import Image from "next/image";
-// import { useRouter } from 'next/navigation';
-import React, { useState } from "react";
-import Modal from '../components/Modal'
-import Footer from "@/components/Footer";
-import { damp } from "three/src/math/MathUtils";
+import React, { useState, useEffect } from "react";
+import Modal from "@components/Modal";
+import Footer from "@components/Footer";
 
 export default function Home() {
-  // const router = useRouter()
   const [showModal, setShowModal] = useState(false);
   const [showAboutModal, setShowAboutModal] = useState(false);
   const [showTechModal, setShowTechModal] = useState(false)
+  const [showPdfModal, setShowPdfModal] = useState(false)
 
   return (
     <div className="mainContainer overflow-y-auto">
@@ -177,6 +174,28 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center mt-2.5">
                   <p>karenhickey1010@gmail.com</p>
                   <Footer />
+                  <button
+                    className="rounded-md"
+                    onClick={() => setShowPdfModal(true)}
+                  >
+                      Download Resume
+                  </button>
+                  {showPdfModal && (
+                    <Modal isOpen={showPdfModal} onClose={() => setShowPdfModal(false)}>
+                      <div className="p-3">
+                        <h2 className="text-center subtitleText mb-4">Print or Download Resume</h2>
+                        <div className="h-[500px] flex flex-column">
+                          <div className="h-[400px] overflow-y-auto">
+                            <img 
+                              src="/resume-screenshot.png"
+                              className="w-full"
+                            >
+                            </img>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal>
+                  )}
                 </div>
                 <p className="text-justify mt-3">I am a results-driven professional who thrives in fast-paced environments, combining problem-solving skills with excellent communication to resolve conflicts with tact and diplomacy. As a creative thinker with a keen eye for design, I bring a unique perspective to web application styling, ensuring visually appealing and user-friendly interfaces. I value collaboration and consistently seek opportunities to learn, leveraging diverse ideas to drive innovation and deliver impactful results.</p>
               </div>
