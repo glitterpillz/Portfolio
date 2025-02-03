@@ -300,6 +300,9 @@ export default function Home() {
                   <div className="flex gap-3 text-justify">
                     <span className="text-xl neonText">•</span><p>Configured AWS S3 buckets to manage image file uploads, utilizing controlled permissions, access policies, versioning, and optimized storage settings for secure and scalable file handling.</p>
                   </div>
+                  <div>
+                    <span className="text-xl neonText">•</span><p>Practiced Agile development methodologies, including SCRUM, by participating in daily stand-ups, sprint planning, and code reviews to foster effective collaboration, maintain project velocity, and ensure high-quality deliverables in team-based projects.</p>
+                  </div>
                 </div>
 
               </div>
