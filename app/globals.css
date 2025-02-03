@@ -418,3 +418,7 @@ h1 {
   color: #a893a2;
   text-shadow: none;
 }
+
+.downloadBtn:hover {
+  color: #ff3bba;
+}

@@ -175,7 +175,7 @@ export default function Home() {
                   <p>karenhickey1010@gmail.com</p>
                   <Footer />
                   <button
-                    className="rounded-md"
+                    className="downloadBtn rounded-md"
                     onClick={() => setShowPdfModal(true)}
                   >
                       <strong>Download Resume</strong>
@@ -222,9 +222,9 @@ export default function Home() {
                     </Modal>
                   )}
                 </div>
-                <p className="text-justify mt-3">An inventive problem-solver at heart, I have always been driven by a passion for creativity and the art of design. Growing up immersed in video games, I was captivated not only by the stories, but by the artistry and mechanics that brought them to life - sparking my curiosity for programming. Through an intensive bootcamp, I uncovered a love for crafting intuitive and visually compelling web applications, blending technical precision with artistic vision. My ability to think creatively allows me to transform abstract ideas into seamless digital experiences that engage, inspire, and leave a lasting impact.</p>
-                <p className="text-justify mt-3">Having grown up an Army brat, I learned adaptability and the benefit of connecting with others. Creativity has always been a big part of my life—whether through writing, music, art, or intricate crafts. I also understand the value of self-discipline and thrived in teamwork and performance as a former equestrian, gymnast, cheerleader, and musician.</p>
-                <p className="text-justify mt-3">My professional career began with an Associate&apos;s Degree in Business Administration, leading to a role as a Financial Controller, but I was always searching for something that truly inspired me. In finally taking that intimidating leap of faith into Programming, I found a craft that blends logic, creativity, and problem-solving in a way that felt natural and fun! Outside of tech, I have a profound love for animals and take the greatest joy in bringing smiles to others, whether through my work or personal passions.</p>              
+                <p className="text-justify mt-3">I have always been captivated by computers and technology, drawn to the intricate logic and boundless creativity behind software, systems, and how they come together to solve real-world problems. Problem-solving comes naturally to me - I love tackling puzzles, breaking down challenges, and finding innovative solutions. Software Engineering initially intrigued me because it combines analytical thinking with the ability to build something meaningful from the ground up.</p>
+                <p className="text-justify mt-3">Throughout my career, I&apos;ve excelled in roles that demand precision, organization, and a keen eye for problem-solving, but I was constantly searching for a greater challenge. When I began learning to code, I quickly realized how much I loved the process - every project felt like a new puzzle to solve, a new way to create, and an opportunity to keep growing. Programming empowers me to merge technical precision with creativity, crafting functional, engaging experiences while ensuring safety and privacy in an increasingly digital world.</p>
+                <p className="text-justify mt-3">By embracing my passion, I discovered a career that excites and challenges me every day - one where I am constantly learning, innovating, and tackling complex problems with tangible outcomes. Whether designing seamless user experiences, optimizing complex systems, or exploring emerging technologies, Software Engineering gives me the opportunity to turn ideas into reality in ways that leave a lasting impact.</p>              
               </div>
             </Modal>
           )}
