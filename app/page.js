@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center">
                   <h3 className="footer">Portfolio Website</h3>
                   <p>I built this Portfolio using Next.js and Tailwind CSS</p>
-                  <p>Last updated: Feb 3, 2025</p>
+                  <p>Last updated: Feb 5, 2025</p>
                 </div>
               </div>
             </Modal>
@@ -300,7 +300,7 @@ export default function Home() {
                   <div className="flex gap-3 text-justify">
                     <span className="text-xl neonText">•</span><p>Configured AWS S3 buckets to manage image file uploads, utilizing controlled permissions, access policies, versioning, and optimized storage settings for secure and scalable file handling.</p>
                   </div>
-                  <div>
+                  <div className="flex gap-3 text-justify">
                     <span className="text-xl neonText">•</span><p>Practiced Agile development methodologies, including SCRUM, by participating in daily stand-ups, sprint planning, and code reviews to foster effective collaboration, maintain project velocity, and ensure high-quality deliverables in team-based projects.</p>
                   </div>
                 </div>
